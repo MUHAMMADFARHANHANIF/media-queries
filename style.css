@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    padding: 10px 80px;
+    /* margin: 20px 20px; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+#nav-left img{
+    width: 100px;
+    /* height: 100px; */
+    border-radius: 50%;
+    /* border: 1px solid wheat; */
+}
+#nav-left{
+    width: 40%;
+}
+#nav-right{
+    width: 60%;
+
+    /* gap: 30px; */
+    text-decoration:none;
+    text-transform: none;
+    /* background-color: #fff; */
+}
+ul{
+
+    /* background-color: #fff; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 4rem;
+    
+}
+#icon{
+    font-size: 50px;
+    color: #9c3737;
+    display: none;
+}
+main{
+    width: 100%;
+}
+
+#background{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #af3c3c; */
+    
+    padding: 10px;
+    /* grid-template-columns: repeat(3,1fr); */
+    
+  
+}
+
+
+#img{
+    /* width: 30%; */
+    background-color: #914b4b;
+    position: relative;
+    height: 100px;
+    gap: 80px 10px;
+}
+
+
+
+
+
+@media (max-width:500px) {
+    #img{
+        /* width: 50%; */
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 50%;
+        /* flex-wrap: wrap; */
+    }
+    #background{
+        /* display: block; */
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        background-color: #0026ff;
+
+    }
+    #icon{
+        font-size: 30px;
+    }
+    nav{
+        background-color: #fff;
+        color: #000;
+    }
+    
+}
+@media (max-width:700px) {
+    ul{
+        display: none;
+    }
+    #img{
+        border-radius: 90%;
+        border: 5px solid brown;
+
+    }
+    #icon{
+        display: block;
+    }
+    nav{
+        background-color: #65aa69;
+        color: #ff0000;
+    }
+    
+}
+@media (max-width:1000px) {
+    html{
+        font-size: 50%;
+    }
+    #background{
+        background-color: #e21be2;
+    }
+    nav{
+        background-color: #ffffff;
+        color: #000;
+    }
+
+}
